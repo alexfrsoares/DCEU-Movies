@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HorizontalList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView (.horizontal, showsIndicators: false) {
+             HStack {
+                 ForEach(movies) { movie in
+                    HStackMovieInfo(movie: movie)
+                 }
+             }
+        }
+        .padding(.leading, 10)
     }
 }
 

@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct HStackMovieInfo: View {
+    var movie: DCEU_Movie
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Image("2019 Joker")
+            movie.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 260)
                 .cornerRadius(10)
-            Text("Joker")
+            Text(movie.title)
                 .font(.headline)
-            Text("☆ 7.8")
+                .lineLimit(1)
+            Text("☆ \(movie.userScore)")
                 .font(.subheadline)
+                .foregroundColor(Color.gray)
         }
-        .padding()
+        .frame(width: 140)
+        .padding(.all, 4)
     }
 }
 
-struct HStackMovieImage_Previews: PreviewProvider {
+struct HStackMovieInfo_Previews: PreviewProvider {
     static var previews: some View {
-        HStackMovieInfo()
+        HStackMovieInfo(movie: movies[10])
     }
 }

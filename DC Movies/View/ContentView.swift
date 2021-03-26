@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(alignment: .leading) {
+                Text("Now Playing")
+                    .font(.headline)
+                HorizontalList()
+                Text("Popular Movies")
+                    .font(.headline)
+                VerticalList()
+            }
+            .navigationBarTitle(Text("DCEU Movies"), displayMode: .large)
+        }
     }
 }
 
