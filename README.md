@@ -5,4 +5,4 @@ Next commit:
 - Visual improvements
 
 Resource Files:
-- http://dev.nimdog.com/DCEU-Movies-Resources.zip
+- http://dev.nimdog.com/DCEU-Movies%20Resources.zip
