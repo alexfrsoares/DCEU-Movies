@@ -14,6 +14,7 @@
 		FA8EE582260D257600FEC04C /* DCEU_Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = FA8EE581260D257600FEC04C /* DCEU_Movies.json */; };
 		FA8EE587260D273100FEC04C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EE586260D273100FEC04C /* ModelData.swift */; };
 		FA8EE58A260D275E00FEC04C /* DCEU_Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EE589260D275E00FEC04C /* DCEU_Movie.swift */; };
+		FAE477D3260F73AD0096C7BD /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE477D2260F73AD0096C7BD /* MovieDetailView.swift */; };
 		FAF3B01F260D316900F84119 /* HStackMovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3B01E260D316900F84119 /* HStackMovieInfo.swift */; };
 		FAF3B024260D399300F84119 /* VStackMovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3B023260D399300F84119 /* VStackMovieInfo.swift */; };
 		FAF3B028260D562700F84119 /* VerticalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3B027260D562700F84119 /* VerticalList.swift */; };
@@ -30,6 +31,7 @@
 		FA8EE581260D257600FEC04C /* DCEU_Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DCEU_Movies.json; sourceTree = "<group>"; };
 		FA8EE586260D273100FEC04C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		FA8EE589260D275E00FEC04C /* DCEU_Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEU_Movie.swift; sourceTree = "<group>"; };
+		FAE477D2260F73AD0096C7BD /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		FAF3B01E260D316900F84119 /* HStackMovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackMovieInfo.swift; sourceTree = "<group>"; };
 		FAF3B023260D399300F84119 /* VStackMovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackMovieInfo.swift; sourceTree = "<group>"; };
 		FAF3B027260D562700F84119 /* VerticalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalList.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FAF3B02A260D579200F84119 /* HorizontalList.swift */,
 				FAF3B023260D399300F84119 /* VStackMovieInfo.swift */,
 				FAF3B027260D562700F84119 /* VerticalList.swift */,
+				FAE477D2260F73AD0096C7BD /* MovieDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				FA8EE587260D273100FEC04C /* ModelData.swift in Sources */,
 				FA8EE560260D154000FEC04C /* ContentView.swift in Sources */,
 				FAF3B024260D399300F84119 /* VStackMovieInfo.swift in Sources */,
+				FAE477D3260F73AD0096C7BD /* MovieDetailView.swift in Sources */,
 				FAF3B01F260D316900F84119 /* HStackMovieInfo.swift in Sources */,
 				FA8EE55E260D154000FEC04C /* DC_MoviesApp.swift in Sources */,
 				FAF3B02B260D579200F84119 /* HorizontalList.swift in Sources */,
@@ -329,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimdog.DC-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimdog.dev.DC-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +355,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nimdog.DC-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nimdog.dev.DC-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

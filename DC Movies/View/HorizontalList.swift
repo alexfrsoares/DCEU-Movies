@@ -12,7 +12,9 @@ struct HorizontalList: View {
         ScrollView (.horizontal, showsIndicators: false) {
              HStack {
                  ForEach(movies) { movie in
-                    HStackMovieInfo(movie: movie)
+                    NavigationLink(destination: MovieDetailView(movie: movie)) {
+                        HStackMovieInfo(movie: movie)
+                    }
                  }
              }
         }

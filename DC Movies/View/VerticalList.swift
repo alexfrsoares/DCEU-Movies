@@ -10,7 +10,9 @@ import SwiftUI
 struct VerticalList: View {
     var body: some View {
         List(movies) { movie in
-            VStackMovieInfo(movie: movie)
+            NavigationLink(destination: MovieDetailView(movie: movie)) {
+                VStackMovieInfo(movie: movie)
+            }
         }
         .listStyle(PlainListStyle())
         .padding(.all, 0)
