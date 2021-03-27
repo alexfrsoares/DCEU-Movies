@@ -30,7 +30,7 @@ struct VStackMovieInfo: View {
                     .foregroundColor(Color.gray)
             }
         }
-        .padding()
+        .padding(.horizontal, 0)
     }
 }
 

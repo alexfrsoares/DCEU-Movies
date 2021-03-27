@@ -9,6 +9,8 @@ import Foundation
 
 var movies: [DCEU_Movie] = load("DCEU_Movies.json")
 
+var popularMovies: [DCEU_Movie] = []
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
@@ -30,3 +32,11 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+
+//func topMovies(movies: [DCEU_Movie]) {
+//    for movie in movies {
+//        if movie.userScore >= 7.0 {
+//            popularMovies.append(movie)
+//        }
+//    }
+//}

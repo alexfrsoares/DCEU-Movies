@@ -12,6 +12,11 @@ struct VerticalList: View {
         List(movies) { movie in
             VStackMovieInfo(movie: movie)
         }
+        .listStyle(PlainListStyle())
+        .padding(.all, 0)
+        .onAppear(perform: {
+            UITableView.appearance().separatorStyle = .none
+        })
     }
 }
 
