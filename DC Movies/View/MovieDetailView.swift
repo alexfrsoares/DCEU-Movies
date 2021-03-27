@@ -11,25 +11,39 @@ struct MovieDetailView: View {
     var movie: DCEU_Movie
     
     var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(alignment: .bottom) {
                     movie.image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 180)
                         .cornerRadius(10)
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 6) {
                         Text(movie.title)
+                            .font(.title3)
+                            .bold()
                         Text("Info")
-                        Text(movie.userScore)
+                            .font(.body)
+                            .foregroundColor(Color.gray)
+                        
+                        Text("☆ \(movie.userScore)")
+                            .font(.caption)
+                            .foregroundColor(Color.gray)
+                            .padding(.bottom, 12)
                     }
+                    .padding(.horizontal, 6)
                 }
                 Text("Overview")
+                    .font(.headline)
+                    .fontWeight(.bold)
                 Text(movie.description)
+                    .foregroundColor(Color.gray)
+                    .padding(0)
+                Spacer()
             }
+            .padding()
             .navigationBarTitle(Text("Movie Details"), displayMode: .inline)
-        }
+            .navigationBarBackButtonHidden(false)
     }
 }
 

@@ -32,7 +32,7 @@ struct ContentView: View {
                     .padding(.top, 20)
                 VerticalList()
             }
-            .navigationBarTitle(Text("DCEU Movies"), displayMode: .large)
+            .navigationBarTitle(Text("DCEU Movies"), displayMode: .automatic)
         }
     }
 }
